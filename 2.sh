@@ -23,7 +23,7 @@ fi
 
 NAME=trojan-go
 VERSION="$(curl -s "https://api.github.com/repos/p4gefau1t/trojan-go/releases" | jq -r '.[0].tag_name' --raw-output)"
-TARBALL="$NAME-$VERSION-linux-amd64.zip"
+TARBALL="$NAM-linux-amd64.zip"
 DOWNLOADURL="https://github.com/p4gefau1t/trojan-go/releases/download/${VERSION}/trojan-go-linux-amd64.zip"
 TMPDIR="$(mktemp -d)"
 INSTALLPREFIX=/usr/local
