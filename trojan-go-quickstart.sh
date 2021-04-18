@@ -3,7 +3,6 @@
 echo "Getting the latest version of trojan-go"
 latest_version="$(curl -s "https://api.github.com/repos/p4gefau1t/trojan-go/releases" | jq '.[0].tag_name' --raw-output)"
 echo "${latest_version}"
-
 mkdir -p "/usr/bin/trojan-go"
 mkdir -p "/etc/trojan-go"
 
